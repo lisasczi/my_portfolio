@@ -1,0 +1,32 @@
+<section class="section-contact"  id="contact">
+  <h1 class="main-title"> Et si nous <strong>discutions ?</strong></h1>
+
+  <div class="formulaire">
+    <%= form_for Contact.new do |f| %>
+      <div class="form-bloc">
+
+      <div class="form-group">
+        <%= f.label :nom %> </br>
+        <%= f.text_field  :nom, required: true %> </br>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :email %> </br>
+        <%= f.text_field :email, required: true %></br>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :message %></br>
+        <%= f.text_area :message, rows: 8, cols: 40, required: true %></br>
+      </div>
+
+      <div class="form-group">
+        <%= f.submit 'Envoyer', class: 'button-sub' %>
+      </div>
+
+    </div>
+  </div>
+  <% end %>
+</section>
+
+<%= render 'shared/footer' %>

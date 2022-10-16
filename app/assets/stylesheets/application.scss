@@ -1,0 +1,101 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bootstrap";
+//  @import "bootstrap/scss/bootstrap";
+//= require bootstrap/dist/css/bootstrap
+
+ body{
+    margin: 0;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    color: #424242;
+ }
+
+
+ html {
+  text-align: justify;
+  color:#424242;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+ }
+
+ *, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ .hidden {
+  display: none;
+ }
+
+ .main-title{
+  font-size: 2vw;
+  color:#FF5733;
+  // letter-spacing: 1px;
+  // word-spacing: 2px;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: repeat;
+  padding: 80px;
+  text-align: center;
+ }
+
+
+ @keyframes slidein {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+
+  to {
+    margin-left:0%;
+    width:100%;
+  }
+}
+
+ ::selection{
+  background-color: #ecdda7;
+  color: white;
+}
+
+::-moz-selection {
+  // background-color: #ffde68;
+  background-color: #ecdda7;
+  color: white;
+}
+
+// p{
+//   text-align: justify;
+//   color:#424242;
+//   letter-spacing: 1px;
+//   word-spacing: 2px;
+// }
+
+// h2 {
+//   text-align: justify;
+//   color:#424242;
+//   letter-spacing: 1px;
+//   word-spacing: 2px;
+// }
+
+// h5 {
+//   text-align: justify;
+//   color:#424242;
+//   letter-spacing: 1px;
+//   word-spacing: 2px;
+// }

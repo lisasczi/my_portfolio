@@ -1,0 +1,43 @@
+.footer {
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  color: rgba(0,0,0,0.3);
+  bottom: 0;
+  width: 100%;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color:  rgba(0,0,0,0.3);
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+  animation: spin 2s;
+}
+
+.footer .fa-heart {
+  color: #FCD338;
+}
+
+.footer .fa-heart:hover {
+  color: #FCD338;
+  animation: spin 2s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}

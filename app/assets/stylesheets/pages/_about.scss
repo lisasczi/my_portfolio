@@ -1,0 +1,44 @@
+.items p {
+  margin-top: 1vw;
+  font-size: 20px;
+}
+
+.items h3 {
+  font-size: 25px;
+  // color:#424242;
+  // letter-spacing: 1px;
+  // word-spacing: 2px;
+  padding: 20px;
+}
+
+
+.item_5 li {
+  margin-top: 1vw;
+  // color: #424242;
+  // letter-spacing: 1px;
+  // word-spacing: 2px;
+  margin-left: 20px;
+  text-align: justify;
+  font-size: 20px;
+
+}
+
+.item_5 ul {
+  padding-left: 8vw;
+}
+
+.items{
+  width: 100%;
+}
+
+.photo{
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+  background-color: orange;
+  background: url("portrait.jpg");
+  background-size: cover;
+  margin: 0px 25px 0 60px;
+  float: right;
+  shape-outside: circle();
+}

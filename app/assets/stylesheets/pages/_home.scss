@@ -1,0 +1,54 @@
+.imagehome{
+  background-image: url('sunset.jpg');
+  width: 100%;
+  height: 40vw;
+  opacity: 90%;
+  // filter: sepia(40%);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 8px 4px -4px #9e9494;
+
+
+}
+
+.imagehometext h1, .imagehometext h2 {
+  color: white;
+  font-size: 3vw;
+  width: 100%;
+  text-align: center;
+  padding-top: 8vw;
+  text-shadow: -2px 2px 4px
+  rgba(0, 0, 0, 0.8);
+
+}
+
+// @media screen and (max-width: 650px) {
+//   .imagehometext h1, .imagehometext h2 {
+//     font-size: 20px;
+//   }
+// }
+
+@media (max-width: 768px){
+  .imagehometext h1, .imagehometext h2 {
+    padding-top: 10vw;
+  }
+
+}
+
+@media (max-width: 430px){
+  .imagehometext h1, .imagehometext h2 {
+   font-size: 4vw;
+  }
+  .imagehometext h1{
+    padding-top: 20vw
+  }
+  .imagehome{
+    height: 70vw;
+  }
+}
+
+@media (max-width: 380px){
+  .imagehome{
+    height: 75vw;
+  }
+}

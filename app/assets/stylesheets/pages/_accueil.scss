@@ -1,0 +1,251 @@
+.box{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+.box p {
+  color: white;
+}
+
+.cercle {
+  flex-shrink: 0;
+  color: #fff;
+  padding: 7%;
+  width: 30%;
+  height: auto;
+  margin-right: -25px;
+  mix-blend-mode: multiply;
+}
+
+.c1{
+  background: #ffc30f;
+  border-radius: 60% 40% 70% 30% / 30% 30% 70% 70%;
+}
+
+.c2 {
+  background: #ff5733;
+  border-radius: 16% 84% 16% 84% / 52% 59% 41% 48%;
+}
+
+.c3{
+  background: #8d3758;
+  border-radius: 48% 52% 60% 40% / 87% 59% 41% 13%;
+}
+
+//  PARTIE COMPETENCES //
+
+
+.competences{
+  transition: transform 1s;
+  // height: 100vh;
+  width: auto;
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
+  grid-template-columns: repeat(3, max-content);
+  row-gap: 2vw;
+  column-gap: 2vw;
+  margin-left: 8vw;
+}
+
+
+.competences a img {
+  opacity: 0.4;
+  width: auto;
+}
+
+.competences a img:hover {
+  transform: translateY(-10px);
+  opacity: 1;
+
+}
+
+@media screen and (max-width: 768px){
+  .box{
+    font-size: 13px;
+  }
+  .competences h5{
+    text-align: left;
+  }
+  .container h2 {
+    font-size: 20px;
+    margin: 20px;
+  }
+  .competences{
+    grid-template-rows: repeat(4, max-content);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen and (max-width: 430px){
+  .box{
+    font-size: 8px;
+    height: 180px;
+    width: 100%;
+  }
+  .cercle {
+    margin-right: -10px;
+  }
+  .c1 {
+    border-radius: 60% 40% 70% 30% / 30% 78% 22% 70%;
+  }
+  .competences{
+    grid-template-rows: repeat(4, max-content);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .competences h5 {
+    font-size: 15px;
+    margin: 15px;
+  }
+  .competences a img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .box{
+    font-size: 7px;
+  }
+  .cercle {
+    margin-right: -10px;
+  }
+  .c1 {
+    border-radius: 78% 22% 67% 33% / 30% 86% 14% 70% ;
+  }
+  .c2 {
+    border-radius: 41% 59% 77% 23% / 52% 59% 41% 48% ;
+  }
+
+  .competences{
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr 1fr;
+  }
+  .Skill-Area{
+    font-size: 10px ;
+  }
+  .PercentText{
+    font-size: 10px ;
+  }
+}
+
+
+
+
+//langues//
+
+
+.SkillBar {
+  width: 90%;
+  height: 50px;
+  position: relative;
+  background: #FFF5E4;
+  margin: 20px auto;
+}
+#Skill-anglais {
+  width: 90%;
+  animation: Animate-anglais 4s;
+  -webkit-animation: Animate-anglais 4s;
+  -moz-animation: Animate-anglais 4s;
+  -o-animation: Animate-anglais 4s;
+  height: 50px;
+  position: absolute;
+  background-color: #FF9494;
+}
+@keyframes Animate-anglais {
+  from {
+  width: 10px;
+}
+to {
+  width: 90%}
+}@-webkit-keyframes Animate-anglais {
+  from {
+  width: 10px;
+}
+to {
+  width: 90%}
+}@-moz-keyframes Animate-anglais {
+  from {
+  width: 10px;
+}
+to {
+  width: 90%}
+}@-o-keyframes Animate-anglais {
+  from {
+  width: 10px;
+}
+to {
+  width: 90%}
+}
+#Skill-espagnol {
+  animation: Animate-espagnol 5s;
+  -webkit-animation: Animate-espagnol 5s;
+  -moz-animation: Animate-espagnol 5s;
+  -o-animation: Animate-espagnol 5s;
+  width: 40%;
+  height: 50px;
+  position: absolute;
+  background-color: #FFD1D1;
+}
+@keyframes Animate-espagnol {
+  from {
+  width: 10px;
+}
+to {
+  width: 40%}
+}@-webkit-keyframes Animate-espagnol {
+  from {
+  width: 10px;
+}
+to {
+  width: 40%}
+}@-moz-keyframes Animate-espagnol {
+  from {
+  width: 10px;
+}
+to {
+  width: 40%}
+}@-o-keyframes Animate-espagnol {
+  from {
+  width: 10px;
+}
+to {
+  width: 40%}
+}
+#Skill-chinois {
+  animation: Animate-chinois 5s;
+  -webkit-animation: Animate-chinois 5s;
+  -moz-animation: Animate-chinois 5s;
+  -o-animation: Animate-chinois 5s;
+  width: 15%;
+  height: 50px;
+  position: absolute;
+  background-color: #FFE3E1;
+}
+@keyframes Animate-chinois {
+  from {
+  width: 12px;
+}
+to {
+  width: 12%}
+}@-webkit-keyframes Animate-chinois {
+  from {
+  width: 12px;
+}
+to {
+  width: 12%}
+}@-moz-keyframes Animate-chinois {
+  from {
+  width: 12px;
+}
+to {
+  width: 12%}
+}@-o-keyframes Animate-chinois {
+  from {
+  width: 12px;
+}
+to {
+  width: 12%}
+}

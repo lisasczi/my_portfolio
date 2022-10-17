@@ -99,3 +99,21 @@
 //   letter-spacing: 1px;
 //   word-spacing: 2px;
 // }
+
+@media screen and (min-width: 320px) {
+h1{
+  font-size: 5vw !important;
+}
+}
+@media screen and (min-width: 650px) {
+
+}
+@media screen and (min-width: 760px) {
+  h1{
+    font-size: 3vw !important;
+  }
+
+}
+@media screen and (min-width: 1440px) {
+
+}

@@ -1,9 +1,6 @@
-<div class="container">
-<br>
-<br>
-<br>
-  <%# <p><a href="<%= root_path " class="btn-accueil">Accueil</a> / <a href="<%= articles_path " class="btn-accueil">Articles</a> / <%= @article.title </p> %>
+<div class="container" id="articlebg">
 
+<br>
       <% if @article.title == "Buddy"%>
           <div class="article_card_buddy">
            <div class="articles_card_title_buddy">
@@ -39,7 +36,7 @@
         <p>Buddy est donc le projet de fin de bootcamps. Après sept semaines de formation intensive, nous avons eu les deux dernières semaines pour inventer et créer de toute pièce cette application.
          Nous l'avons présenté en public le 10 Juin 2022 lors du demo Day. </br>
         Afin de mieux vous rendre compte des capacités de Buddy, voici la video. </p>
-          <%# <%= video_tag 'demoday.mp4', muted: :muted,  :controls => true, class: 'video' %> 
+          <%# <%= video_tag 'demoday.mp4', muted: :muted,  :controls => true, class: 'video' %>
 
     </div>
   <%end%>

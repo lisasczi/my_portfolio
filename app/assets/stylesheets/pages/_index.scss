@@ -16,14 +16,42 @@
   padding: 5vw;
   background-color: white;
   border-radius: 10px;
+}
 
+.card{
+  position: relative;
 
 }
 
+.txtcontenu {
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  z-index:2;
 
-.all-articles a img:hover {
+  font-weight: bold;
+  height: auto;
+  width: auto;
+  color: #424242 !important;
+  font-size: 2vw;
+  text-align: center;
+  justify-content: center;
+}
+
+.imgcontenu{
+  transition: 0.5s;
+}
+
+.all-articles a:hover .imgcontenu {
+  opacity: 0.5;
+  filter: sepia(80%);
   transform: translateY(-10px);
 }
+
+.all-articles a:hover .txtcontenu {
+  opacity: 1;
+}
+
 
 .all-articles a img{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
@@ -31,9 +59,14 @@
 
 }
 
+
 .card_1 img {
   width: 40vw;
   height: 20vw;
+}
+.card_1 .txtcontenu{
+  padding-right: 45vw;
+  padding-top: 4vw;
 }
 
 .card_2 img{
@@ -46,6 +79,11 @@
   grid-row: 1 / span 2 ;
 }
 
+.card_2 .txtcontenu{
+  padding-right: 16vw;
+  padding-top: 4vw;
+}
+
 .card_3 img {
   width: 40vw;
   height: 20vw;
@@ -56,6 +94,11 @@
   grid-row: 2;
   width: 40vw;
   height: 20vw;
+}
+
+.card_3 .txtcontenu{
+  padding-left: 4vw;
+  padding-top: 8vw;
 }
 
 @media screen and (max-width: 650px) {

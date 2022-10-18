@@ -1,44 +1,39 @@
 #white{
   background-color: white;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  padding: 5vw;
+  border-radius: 10px;
+  padding: 3vw;
 }
 
 
 .box{
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 1vw;
   width: 100%;
-}
-
-.box p {
-  color: white;
 }
 
 .cercle {
   flex-shrink: 0;
-  color: #fff;
   padding: 7%;
   width: 30%;
   height: auto;
   margin-right: -25px;
   mix-blend-mode: multiply;
+  text-align: center;
 }
 
 .c1{
-  background: #ffc30f;
+  background: #FFEBAD;
   border-radius: 60% 40% 70% 30% / 30% 30% 70% 70%;
 }
 
 .c2 {
-  background: #ff5733;
+  background: #B1D7B4;
   border-radius: 16% 84% 16% 84% / 52% 59% 41% 48%;
 }
 
 .c3{
-  background: #8d3758;
+  background: #FFC090;
   border-radius: 48% 52% 60% 40% / 87% 59% 41% 13%;
 }
 
@@ -51,11 +46,18 @@
   display: grid;
   grid-template-rows: repeat(2, max-content);
   grid-template-columns: repeat(3, max-content);
-  row-gap: 2vw;
-  column-gap: 2vw;
+  row-gap: 3vw;
+  column-gap: 3vw;
   margin-left: 8vw;
   padding-left: 5vw;
 }
+
+.front{
+  grid-column: 2;
+  grid-row: 1 / span 2 ;
+  width: 80%;
+}
+
 
 
 .competences a img {
@@ -144,14 +146,54 @@
 
 //langues//
 
-
+#langue-titre{
+  padding-left: 4vw;
+}
 .SkillBar {
-  width: 90%;
+  width: 80%;
   height: 50px;
   position: relative;
   background: #FFF5E4;
   margin: 20px auto;
 }
+
+#Skill-francais {
+  width: 90%;
+  animation: Animate-francais 4s;
+  -webkit-animation: Animate-francais 4s;
+  -moz-animation: Animate-francais 4s;
+  -o-animation: Animate-francais 4s;
+  height: 50px;
+  position: absolute;
+  background-color: #FFEBAD;
+}
+@keyframes Animate-francais {
+  from {
+  width: 100px;
+}
+to {
+  width: 100%}
+}@-webkit-keyframes Animate-francais {
+  from {
+  width: 100px;
+}
+to {
+  width: 100%}
+}@-moz-keyframes Animate-francais {
+  from {
+  width: 100px;
+}
+to {
+  width: 100%}
+}@-o-keyframes Animate-francais {
+  from {
+  width: 100px;
+}
+to {
+  width: 100%}
+}
+
+
 #Skill-anglais {
   width: 90%;
   animation: Animate-anglais 4s;
@@ -160,7 +202,7 @@
   -o-animation: Animate-anglais 4s;
   height: 50px;
   position: absolute;
-  background-color: #FF9494;
+  background-color: #FFC090;
 }
 @keyframes Animate-anglais {
   from {
@@ -195,7 +237,7 @@ to {
   width: 40%;
   height: 50px;
   position: absolute;
-  background-color: #FFD1D1;
+  background-color: #FFEBAD;
 }
 @keyframes Animate-espagnol {
   from {
@@ -230,7 +272,8 @@ to {
   width: 15%;
   height: 50px;
   position: absolute;
-  background-color: #FFE3E1;
+  background-color: #B1D7B4;
+
 }
 @keyframes Animate-chinois {
   from {

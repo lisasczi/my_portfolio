@@ -6,7 +6,10 @@
         <% @articles.each_with_index do |article, index| %>
             <div class="card_<%= index +1 %>">
                 <%= link_to article_path(article.id) do %>
-                  <%= image_tag article.image, crop: :fill%>
+                  <div class="txtcontenu">
+                    <%=article.small_description %>
+                  </div>
+                  <%= image_tag article.image, crop: :fill, class:"imgcontenu"%>
                   <% end %>
             </div>
           <% end %>

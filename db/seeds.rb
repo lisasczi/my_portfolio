@@ -4,7 +4,8 @@ article_one = Article.create!(
   title: "SuperPnp",
   description: 'Le premier projet de groupe lors du bootcamp au Wagon. SuperPnp est un clone de Airbnb qui vous permet de louer et/ou de mettre en location vos super pouvoirs.
   Codé en cinq jours.',
-  image: "seeds-images/superpnp1.png"
+  image: "seeds-images/superpnp1.png",
+  small_description: "Clone d'Airbnb, site de location de superpouvoirs"
 )
 article_one.save!
 
@@ -13,7 +14,8 @@ article_two = Article.create!(
   description: 'Projet de groupe de fin de formation. Application web conçue pour mobile.
   Selon ton profil Buddy te donnes des taches quotidiennes pour trouver un équilibre qui te convient pour reprendre ta vie en main.
   Codé en dix jours.',
-  image: "seeds-images/buddy1.jpg"
+  image: "seeds-images/buddy1.jpg",
+  small_description: "Coach de vie, rien de plus facile pour reprendre sa vie en main !"
 )
 article_two.save!
 
@@ -22,7 +24,8 @@ article_three = Article.create!(
   description: " Projet personnel.
   Amarylice est un site déjà existant, intialement réalisé en no Code, j'ai décidé de le cloner afin de m'entrainer. Ce projet m'a permis pour la première fois de réaliser seule un site entièrement de A a Z sur Ruby on Rails, que ca soit au niveau du back et du front. Ce fut un excellent exercice même si je ne l'ai pas envoyé en production.
   Codé en un mois.",
-  image: "seeds-images/amarylice1.png"
+  image: "seeds-images/amarylice1.png",
+  small_description:"Site e-commerce de vente de fleurs"
 
 )
 article_three.save!

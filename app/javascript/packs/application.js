@@ -11,3 +11,17 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+
+window.$ = window.jQuery = require("jquery");
+import "bootstrap/dist/js/bootstrap.bundle.js"
+
+
+require("bootstrap")
+import "../../assets/stylesheets/application";
+document.addEventListener("turbolinks:load", function() {
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="popover"]').popover()
+    })
+})

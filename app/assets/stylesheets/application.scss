@@ -14,9 +14,12 @@
  *= require_self
  */
 
- @import "bootstrap";
+//  @import "bootstrap";
 //  @import "bootstrap/scss/bootstrap";
 //= require bootstrap/dist/css/bootstrap
+
+
+@import "bootstrap/scss/bootstrap";
 
  body{
     margin: 0;

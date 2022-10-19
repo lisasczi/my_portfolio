@@ -24,9 +24,15 @@
               <div class="captures_ecran">
                   <p>Je vous propose plusieurs captures d'écran pour ce projet.</p>
                 </div>
-                <div class="photo-slider">
-                    <%= render 'shared/slider' %>
+            <% if @article.title == "Buddy"%>
+                <div class="photo-slider-buddy">
+                    <%= render 'shared/sliderbuddy' %>
                 </div>
+              <%else%>
+                <div class="photo-slider">
+                      <%= render 'shared/slider' %>
+                  </div>
+              <%end%>
 
    </div>
 
@@ -36,10 +42,7 @@
         <p>Buddy est donc le projet de fin de bootcamps. Après sept semaines de formation intensive, nous avons eu les deux dernières semaines pour inventer et créer de toute pièce cette application.
          Nous l'avons présenté en public le 10 Juin 2022 lors du demo Day. </br>
         Afin de mieux vous rendre compte des capacités de Buddy, voici la video. </p>
-        <%# <a href="https://www.youtube.com/watch?v=THk2evQJ47g&list=PLwqwOtDwK_ZbrYfXeC5nEza9e2sMoqRHj&index=2&t=62s">Website</a>
-
-        <%= link_to("https://www.youtube.com/watch?v=THk2evQJ47g&list=PLwqwOtDwK_ZbrYfXeC5nEza9e2sMoqRHj&index=2&t=62s") root_path do  <%= image_tag "wagon.jpg", class: "videophoto"  <% end 
-$ %>
+        <%= link_to("https://www.youtube.com/watch?v=THk2evQJ47g&list=PLwqwOtDwK_ZbrYfXeC5nEza9e2sMoqRHj&index=2&t=62s", :target => "_blank") do %> <%= image_tag "wagon.jpg", class: "videophoto" %> <% end %>
     </div>
   <%end%>
 

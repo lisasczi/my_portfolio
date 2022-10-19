@@ -1,0 +1,80 @@
+
+#carinerbd{
+  margin: 2rem auto;
+
+  overflow: hidden;
+  border: 20px outset #e1c8af;
+  border-radius: 5px;
+  box-shadow: rgba(174, 135, 95, 0.45) 0px 5px 15px;
+}
+
+
+@media screen and (min-width: 320px) {
+
+}
+@media screen and (min-width: 425px) {
+
+
+}
+@media screen and (min-width: 768px) {
+  #carinerbd{
+    // margin: 2rem auto;
+    height: 70vw;
+    width: 60vw !important;
+  }
+
+  #caritembud img{
+    height: 66vw;
+    width: 100%;
+  }
+  #prevbud {
+    width: 40vw !important;
+
+  }
+
+  #nextbd{
+    width: 40vw !important;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  #carinerbd{
+    // margin: 2rem auto;
+    height: 50vw;
+    width: 40vw !important;
+  }
+
+  #caritembud img{
+    height: 46vw;
+    width: 100%;
+  }
+  #prevbud {
+    width: 55vw !important;
+
+  }
+
+  #nextbd{
+    width: 55vw !important;
+  }
+
+}
+@media screen and (min-width: 1440px) {
+#carinerbd{
+  height: 50vw;
+  width: 40vw !important;
+}
+
+  #caritembud img{
+    height: 48vw;
+    width: 100%;
+  }
+  #prevbud {
+    width: 50vw !important;
+
+  }
+
+  #nextbd{
+    width: 50vw !important;
+  }
+}

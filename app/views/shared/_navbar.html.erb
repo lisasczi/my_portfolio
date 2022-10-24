@@ -1,24 +1,17 @@
-
-  <nav>
-        <ul class="liste-nav">
-          <a href="<%= root_path %>" ><%= image_tag("navbar/sunflower.jpg", :class =>"style_logo") %> </a>
-            <%# <li class="item-nav">
-            <%= link_to "Accueil", accueil_path
-            </li> %>
-            <li class="item-nav">
-               <%= link_to "Mes créations", articles_path(:anchor => "crea") %>
-            </li>
-            <li class="item-nav">
-            <%= link_to "Qui suis je?", about_path(:anchor => "perso") %>
-            </li>
-            <li class="item-nav">
-            <%= link_to "Contact",  new_contact_path(:anchor => "contact") %>
-            </li>
-        </ul>
-        <%= image_tag src="navbar/hamburger.svg", class:"logo-menu" %>
-    </nav>
-
+<nav>
+    <ul class="liste-nav">
+        <a href="<%= root_path %>" ><%= image_tag("navbar/sunflower.jpg", :class =>"style_logo") %> </a>
+        <li class="item-nav">
+            <%= link_to "Mes créations", articles_path(:anchor => "crea") %>
+        </li>
+        <li class="item-nav">
+        <%= link_to "Qui suis je?", about_path(:anchor => "perso") %>
+        </li>
+        <li class="item-nav">
+        <%= link_to "Contact",  new_contact_path(:anchor => "contact") %>
+        </li>
+    </ul>
+    <%= image_tag src="navbar/hamburger.svg", class:"logo-menu" %>
+  </nav>
 
 <%= javascript_pack_tag 'my_js' %>
-
-

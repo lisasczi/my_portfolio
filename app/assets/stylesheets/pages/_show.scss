@@ -2,6 +2,7 @@
 #articlebg{
   padding: 3vw;
   background-color: white;
+  border-radius: 10px;
 
 }
 
@@ -51,11 +52,13 @@
 .articles_card_description{
   grid-column: 1/ span 2;
   grid-row: 3;
+  text-align: center;
 }
 
 .captures_ecran{
   grid-column: 1/ span 2;
   grid-row: 4;
+  text-align: center;
 }
 
 .photo-slider{
@@ -88,9 +91,10 @@
 }
 
 .photo-slider-buddy{
-  height: 50vw;
-  width: 30vw;
+  // height: 50vw;
+  // width: 30vw;
   text-align: center;
+  margin: auto;
 }
 
 .videoBuddy{

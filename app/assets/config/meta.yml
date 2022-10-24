@@ -1,0 +1,5 @@
+meta_product_name: "Mon portfolio"
+meta_title: "Bienvenu sur le portfolio de Lisa Scanzi"
+meta_description: "Développeuse fullstack je vous présente mon portfolio"
+meta_image: "mimosa.png" # should exist in `app/assets/images/`
+twitter_account: "@LisaSczi"   # required for Twitter Cards

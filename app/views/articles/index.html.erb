@@ -9,7 +9,7 @@
                   <div class="txtcontenu">
                     <%=article.small_description %>
                   </div>
-                  <%= image_tag article.image, crop: :fill, class:"imgcontenu"%>
+                  <%= image_tag article.image, alt: "#{article.title} image", crop: :fill, class:"imgcontenu"%>
                   <% end %>
             </div>
           <% end %>

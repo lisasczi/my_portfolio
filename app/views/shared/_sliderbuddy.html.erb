@@ -12,23 +12,23 @@
   <div class="carousel-inner" id="carinerbd">
 
     <div class="carousel-item active" data-bs-interval="10000" id="caritembud">
-      <%= image_tag("#{@article.title}/#{@article.title}3.jpg", :class =>"d-block w-100") %>
+      <%= image_tag("#{@article.title}/#{@article.title}3.jpg", alt: "#{@article.title} première image", :class =>"d-block w-100") %>
     </div>
 
     <div class="carousel-item" data-bs-interval="2000">
-          <%= image_tag("#{@article.title}/#{@article.title}2.jpg", :class =>"d-block w-100") %>
+          <%= image_tag("#{@article.title}/#{@article.title}2.jpg", alt: "#{@article.title} deuxième image", :class =>"d-block w-100") %>
     </div>
 
     <div class="carousel-item">
-      <%= image_tag("#{@article.title}/#{@article.title}4.jpg", :class =>"d-block w-100") %>
+      <%= image_tag("#{@article.title}/#{@article.title}4.jpg", alt: "#{@article.title} troisième image", :class =>"d-block w-100") %>
     </div>
 
     <% if @article.title == "Amarylice"%>
     <div class="carousel-item">
-        <%= image_tag("#{@article.title}/#{@article.title}5.jpg", :class =>"d-block w-100") %>
+        <%= image_tag("#{@article.title}/#{@article.title}5.jpg", alt: "#{@article.title} quatrième image", :class =>"d-block w-100") %>
       </div>
       <div class="carousel-item">
-        <%= image_tag("#{@article.title}/#{@article.title}6.jpg", :class =>"d-block w-100") %>
+        <%= image_tag("#{@article.title}/#{@article.title}6.jpg", alt: "#{@article.title} cinquième image", :class =>"d-block w-100") %>
       </div>
     <%end%>
   </div>

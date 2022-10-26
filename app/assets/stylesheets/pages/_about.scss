@@ -8,7 +8,17 @@
   padding: 20px;
 }
 
-.item_4 li {
+.item_1 a {
+  color: #424242 !important;
+}
+
+.item_1 a:hover{
+  background-color: #ecdda7;
+  color: white !important;
+
+}
+
+.item_3 li {
   margin-top: 1vw;
   margin-left: 20px;
   text-align: justify;
@@ -17,7 +27,7 @@
 
 }
 
-.item_4 ul {
+.item_3 ul {
   padding-left: 8vw;
 }
 
